@@ -148,7 +148,7 @@
           class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative -z-10"
         >
           <p
-            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
+            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-3 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
           >
             Acme has always been there for me. Their Explorer rocket arrived in
             a wooden crate as expected. Lifelong customer! A++ shopping
@@ -167,13 +167,14 @@
           class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative -z-10"
         >
           <p
-            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
+            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-3 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
           >
             The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
-            Space Modulator on several occassions. This makes me very, very
-            angry! Nevertheless, K-9 and I have awarded Acme the Martian
-            contract for space exploration rockets based on Acme's quality and
-            sturdy designs.
+            Space Modulator on several occassions.
+            <span class="italic"> This makes me very, very angry!</span>
+            Nevertheless, K-9 and I have awarded Acme the Martian contract for
+            space exploration rockets based on Acme's quality and sturdy
+            designs.
           </p>
         </blockquote>
         <figcaption
@@ -188,11 +189,13 @@
           class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative -z-10"
         >
           <p
-            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
+            class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:-bottom-16 after:right-3 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2 after:content-['\201D'] after:font-serif"
           >
-            I knew I not only wanted — I needed — Acme's Infinity Rocket for my
-            mission in space. Acme delievered in one day! Nothing says Take me
-            to your leader like Acme's Infinity Rocket! 💯
+            I knew I not only wanted — <span class="italic">I needed</span> —
+            Acme's Infinity Rocket for my mission in space. Acme delievered in
+            one day! Nothing says
+            <q class="italic"> Take me to your leader </q> like Acme's Infinity
+            Rocket! 💯
           </p>
         </blockquote>
         <figcaption
@@ -205,10 +208,16 @@
     <!-- Contact us -->
     <hr class="bg-black dark:bg-white mx-auto w-1/2" />
 
-    <section id="contact" class="p-6 my-12">
+    <section id="contact" class="p-6 my-12 scroll-m-16">
       <h2 class="text-4xl text-center font-bold sm:text-5xl mb-6 capitalize">
         contact us
       </h2>
+      <form action="submit">
+        <label for="subject">subject</label>
+        <input type="text" placeholder="your subject" />
+        <label for="message">message</label>
+        <textarea name="message" placeholder="Your message"></textarea>
+      </form>
     </section>
   </body>
 </html>
