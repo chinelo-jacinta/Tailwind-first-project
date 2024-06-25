@@ -16,20 +16,50 @@
           <a href="#">🚀acme rockets</a>
         </h1>
         <div>
-          <button id="open-button" class="text-3xl sm:hidden">&#9776;</button>
+          <button id="open-button" class="text-3xl md:hidden cursor-pointer">
+            &#9776;
+          </button>
           <ul
-            class="hidden sm:block space-x-8 capitalize tracking-wider text-xl"
+            class="hidden md:block space-x-8 capitalize tracking-wider text-xl"
             aria-label="main"
           >
-            <a href="#rockets" class="hover:opacity-50">rockets</a>
+            <a href="#rockets" class="hover:opacity-50">Our rockets</a>
             <a href="#testimonials " class="hover:opacity-50">testimonials</a>
             <a href="#contact" class="hover:opacity-50">contact us</a>
           </ul>
         </div>
       </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full flex flex-col justify-center md:hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <ul
+          class="flex flex-col text-5xl capitalize items-center py-8 min-h-screen"
+          aria-label="mobile"
+        >
+          <a href="#home" class="hover:opacity-90 py-6 w-full text-center"
+            >home</a
+          >
+          <a href="#rockets" class="hover:opacity-90 py-6 w-full text-center"
+            >our rockets</a
+          >
+          <a
+            href="#testimonials "
+            class="hover:opacity-90 py-6 w-full text-center"
+            >testimonials</a
+          >
+          <a href="#contact" class="hover:opacity-90 py-6 w-full text-center"
+            >contact us</a
+          >
+          <a href="#footer" class="hover:opacity-90 py-6 w-full text-center"
+            >legal</a
+          >
+        </ul>
+      </section>
     </nav>
     <!-- header -->
-    <header class="max-w-4xl mx-auto my-12 scroll-mt-20">
+    <header id="home" class="max-w-4xl mx-auto my-12 scroll-mt-20">
       <article
         class="flex gap-8 justify-center p-6 sm:flex-row flex-col-reverse items-center mb-12 widescreen:section-min-height tallscreen:section-min-height"
       >
